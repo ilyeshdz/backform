@@ -1,2 +1,44 @@
 @import "tailwindcss";
-@plugin "daisyui";
+
+@theme {
+  --color-bg: #F5F2EC;
+  --color-ink: #1A1814;
+  --color-ink-muted: #8A8070;
+  --color-ink-faint: #C8C2B4;
+  --color-accent: #2D4A2D;
+  --color-accent-light: #E8F0E8;
+  --color-rule: #D6D0C4;
+  
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-blink-cursor {
+  animation: blink 1s step-end infinite;
+}
