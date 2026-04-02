@@ -20,7 +20,10 @@
   ],
   "imports": {
     "@/": "./",
+    "drizzle-kit": "npm:drizzle-kit@^0.31.10",
+    "drizzle-orm": "npm:drizzle-orm@^0.45.2",
     "fresh": "jsr:@fresh/core@^2.2.2",
+    "pg": "npm:pg@^8.20.0",
     "preact": "npm:preact@^10.27.2",
     "@preact/signals": "npm:@preact/signals@^2.5.0",
     "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
